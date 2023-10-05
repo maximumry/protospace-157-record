@@ -71,6 +71,4 @@ group :test do
   gem "webdrivers"
 end
 
-group :development do
-  gem 'rubocop', require: false
-end
+gem 'devise'
