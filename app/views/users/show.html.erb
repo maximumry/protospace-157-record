@@ -28,7 +28,9 @@
         <%= "#{@user.name}さんのプロトタイプ" %>
       </h2>
       <div class="user__card">
-        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
+        <% @prototype.each do |form|%>
+          <%= render partial: 'prototypes/prototype', locals: {prototype: form} %>
+        <% end %>
       </div>
     </div>
   </div>
